@@ -1,10 +1,10 @@
 .body-index {
-   background-image:url(../desafio-05/img/Ciudades.jpg);
+   background-image:url(img/Ciudades.jpg);
  
 }
 .mainwrapper-index {
-    background-color:#ffebcd;
-    background-image:url(../desafio-05/img/Ciudades.jpg);
+    
+    background-image:url(/img/Ciudades.jpg);
 
     display: grid;
     grid-template-areas:
@@ -379,7 +379,7 @@ form {
  
  .informacion-contacto{
  
-     background-image: url('../desafio-05/img/gente\ contacto.jpg');
+     background-image: url('../img/gente\ contacto.jpg');
      padding-bottom: 35px;
      margin-top: 15px;
      display: flex;
@@ -511,7 +511,6 @@ form {
 
  .mainwrapper-capacitaciones {
     
-    background-image: url('../desafio-05/img/e-learning.webp');
     display: grid;
     grid-template-areas:
 
@@ -575,7 +574,7 @@ form {
  
  
  .fondo-capacitaciones{
-     background-image: url('../desafio-05/img/e-learning.webp');
+
      background-size: cover;
      background-position: center;
      }
@@ -702,7 +701,6 @@ form {
 
     .mainwrapper-capacitaciones{
     
-    background-image: url('../desafio-05/img/e-learning.webp');
     display: grid;
     grid-template-areas:
 
