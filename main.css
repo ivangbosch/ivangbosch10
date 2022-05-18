@@ -1,0 +1,794 @@
+.body-index {
+   background-image:url(../desafio-05/img/Ciudades.jpg);
+ 
+}
+.mainwrapper-index {
+    background-color:#ffebcd;
+    background-image:url(../desafio-05/img/Ciudades.jpg);
+
+    display: grid;
+    grid-template-areas:
+
+    "header"
+    "nav"
+    "main"
+    "footer"
+    ;
+
+    max-width: 1440px;
+    margin: auto;
+
+}
+
+/*Estilos de todas las secciones*/
+
+.header-index, .nav-index, .main-index, .footer-index {
+
+    color: #faebd7;
+    border: solid 1px   rgba(13, 13, 13, 0.884) ;
+
+}
+
+.header-index {
+
+    /*Estilos de area Wrapper General*/
+    
+    grid-area: header;
+
+    /*Estilos de seccion*/
+
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.header-index img {
+
+    width: 150px ;
+    animation-name: movimiento-dos;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-delay: 3s;
+
+
+}
+
+/*Estilos Navegador INDEX*/
+.nav-index {
+
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.nav-index ul{
+
+    list-style-type: none;
+}
+
+.nav-index ul li  {
+
+    margin: 25px;
+
+}
+
+.nav-index ul li a {
+
+    font-size: 25px;
+
+    transition: all .3s ease-in-out;
+
+}
+/*Aca Va mi Hover*/
+.nav-index ul li a:hover{
+
+    background-color: rgb(116, 238, 155);
+    
+
+}
+.main-index {
+
+    color: #faebd7;
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+    
+    "nosotros"
+    "mision"
+    "vision"
+    ;
+    text-align: center;
+}
+
+.nosotros, .mision, .vision {
+
+    border: solid 2px;
+
+}
+.nosotros {
+    grid-area: nosotros;
+
+}
+
+.mision {
+
+    grid-area: mision;
+
+}
+
+.mision img{
+    display: none;
+    width: 100%;
+
+    animation-name: movimiento-uno;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-delay: 3s;
+
+
+}
+
+.vision{
+
+    grid-area: vision;
+
+}
+
+.vision img {
+    display: none;
+    width: 100%;
+    transform: translate(0px, 50px);
+}
+
+.footer-index {
+    grid-area: footer;
+}
+
+.footer-index{
+
+    color: #faebd7;
+    font-family: cursive;
+    text-align: center;
+    margin-top: 15px;
+    display: grid;
+  grid-template-areas: 
+  "formulario"
+  "ubicacion"
+  "Redes Sociales";
+
+  align-items: center;
+    
+}
+
+form {
+    color:#ffffff;
+    width: 10px;
+    
+}
+
+.ubicacion{
+
+    display: flex;
+    flex-direction: column-reverse;
+   
+}
+
+.redes-sociales{
+
+    display: flex;
+    flex-direction: column-reverse;
+  
+
+}
+
+
+ /*LINEAS DE ACCION */
+
+
+ .mainwrapper-lineas-de-accion {
+    
+    
+    display: grid;
+    grid-template-areas:
+
+    "header"
+    "nav"
+    "main"
+    "footer"
+    ;
+
+    max-width: 1440px;
+    margin: auto;
+
+}
+
+/*Estilos de todas las secciones*/
+
+.body-lineas-de-accion{
+
+    background:linear-gradient(74deg,rgb(23, 224, 227) 14%, rgb(4, 139, 249)85%);
+ }
+
+.header-lineas-de-accion, .nav-lineas-de-accion, .mainwrapper-lineas-de-accion, .footer-lineas-de-accion {
+
+    border: solid 4px #000000;
+
+}
+
+
+   /*Estilos Navegador LINEAS DE ACCION*/
+
+.nav-lineas-de-accion ul{
+
+    list-style-type: none;
+   
+}
+
+.nav-lineas-de-accion ul li  {
+
+    margin: 25px;
+
+}
+
+.nav-lineas-de-accion ul li a {
+
+    font-size: 15px;
+    justify-content: center;
+    transition: all .3s ease-in-out;
+}
+
+
+}
+
+/*Estilos para mi nav Lineas de Acción */
+
+.desarrollo-e-innovacion, .induccion-y-capacitacion, .investigacion {
+
+    border: solid 2px;
+
+}
+.desarrollo-e-innovacion {
+    grid-area: desarrollo-e-innovacion;
+
+}
+
+.induccion-y-capacitacion {
+
+    grid-area: induccion;
+
+}
+
+.desarrollo-e-innovacion img{   
+    
+    display: none;
+    width: 50%;
+    transform: translate(250px, 0px);
+ 
+}
+.desarrollo-e-innovacion p{
+    max-width: 100%;
+    font-size: 15px;
+    font-family: cursive;
+    margin: auto;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+    text-align: justify;
+}
+
+.induccion-y-capacitacion img{
+
+    display: none;
+    width: 50%;
+    transform: translate(250px, 0px);
+ 
+}
+
+.induccion-y-capacitacion p{
+
+    max-width: 100%;
+    font-size: 15px;
+    font-family: cursive;
+    margin: auto;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-around;
+    text-align: justify;
+
+}
+
+
+.investigacion{
+
+    grid-area: investigacion;
+
+}
+
+.investigacion img{
+    display: none;
+    transform:scale(2);
+    transform: translate(250px, 0px);
+ 
+}
+
+.investigacion p{
+
+    max-width: 100%;
+    font-size: 15px;
+    
+    font-family: cursive;
+    margin: auto;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-around;
+    text-align: justify;
+
+}
+
+
+/*CONTACTO */
+
+.mainwrapper-contacto{
+
+    background:linear-gradient(74deg,rgb(23, 224, 227) 14%, rgb(92, 9, 236)85%);
+    display: grid;
+    grid-template-areas:
+
+    "header"
+    "nav"
+    "main"
+    "footer"
+    ;
+
+    max-width: 1440px;
+    margin: auto;
+}
+
+ /*Estilos Navegador CONTACTO*/
+
+ .nav-contacto div ul{
+
+    list-style-type: none;
+   
+}
+
+.nav-contacto div ul li  {
+
+    margin: 5px;
+
+}
+
+.nav-contacto div ul li a {
+
+    font-size: 15px;
+    justify-content: center;
+
+}
+.inicio-contacto{
+
+    background:linear-gradient(74deg,rgba(23,189,75,1)14%, rgba(226,9,236,1)85%);
+ 
+ }
+ 
+ .informacion-contacto{
+ 
+     background-image: url('../desafio-05/img/gente\ contacto.jpg');
+     padding-bottom: 35px;
+     margin-top: 15px;
+     display: flex;
+     font-size: 15px;
+     font-weight: bold;
+ 
+ }
+ 
+ .menu-contacto{
+     
+    padding: 15px;
+     font-family:'Raleway',Helvetica,Arial,Lucida,sans-serif;
+     font-size: 13px;
+     font-weight: bold;
+     display: flex;
+     justify-content: flex-start;
+    
+ }
+ .footer-contacto{
+
+    color: #faebd7;
+    font-family: cursive;
+    text-align: center;
+    margin-top: 15px;
+    display: grid;
+  grid-template-areas: 
+  "formulario"
+  "ubicacion"
+  "Redes Sociales";
+
+  align-items: center;
+    
+}
+
+form {
+    color:#ffffff;
+    width: 10px;
+    
+}
+
+.ubicacion{
+
+    display: flex;
+    flex-direction: column-reverse;
+   
+}
+
+ 
+ 
+ /*CLIENTES */
+
+ .mainwrapper-clientes{
+
+    background-color: rgb(219, 239, 251);
+
+    display: grid;
+    grid-template-areas:
+
+    "header"
+    "nav"
+    "main"
+    "footer"
+    ;
+
+    max-width: 1440px;
+    margin: auto;
+}
+ 
+ 
+ .nav-clientes{
+    
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+ }
+
+.nav-clientes ul{
+
+ list-style-type: none;
+}
+
+.nav-clientes ul li  {
+
+ margin: 35px;
+ list-style-type: none;
+
+}
+
+.nav-clientes ul li a {
+
+ font-size: 25px;
+
+}
+
+ .clientes-footer{
+     font-size: 15px;
+     padding: 55px;
+     display: flex;
+     flex-direction: row-reverse;
+ }
+ 
+ .clientes-inicio{
+ 
+    
+     font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;
+     font-weight: bold;
+     font-size: 14px;
+     display:flex;
+     flex-direction: row;
+     justify-content: flex-end;
+ }
+ 
+ .imagenes-clientes{
+ 
+     display: grid;
+     background-color: rgb(219, 239, 251);
+     padding: 3px;
+     grid-template-columns:  1fr, 1fr);
+     grid-template-rows: 1fr 1fr;
+     grid-column-gap: 10px;
+     grid-row-gap: 10px;
+     justify-content: center;
+ }
+ 
+ 
+ /*CAPACITACIONES */
+
+ .mainwrapper-capacitaciones {
+    
+    background-image: url('../desafio-05/img/e-learning.webp');
+    display: grid;
+    grid-template-areas:
+
+    "nav"
+    "header"
+    "main"
+    "footer"
+    ;
+
+    max-width: 1440px;
+    margin: auto;
+
+}
+
+.header-capacitaciones, .nav-capacitaciones, .mainwrapper-capacitaciones, .footer-capacitaciones {
+
+    border: solid 2px #000000;
+    
+}
+
+ /*Estilos Navegador CAPACITACIONES*/
+
+ .nav-capacitaciones ul{
+
+    list-style-type: none;
+   
+}
+
+.nav-capacitaciones ul li  {
+
+    margin: 35px;
+
+}
+
+.nav-capacitaciones ul li a {
+
+    font-size: 15px;
+    justify-content: center;
+
+}
+ .capacitaciones-inicio{
+ 
+     background-color: #ffebcd; 
+     font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;
+     font-weight: bold;
+     padding: 25px;
+     font-size: 14px;
+     display:flex;
+     flex-direction: row;
+     justify-content: flex-end;
+ }
+ 
+ .footer-capacitaciones{
+     
+     font-size: 15px;
+     padding: 55px;
+     color: #0000ff;
+     display: flex;
+     flex-direction: row-reverse;
+ }
+ 
+ 
+ .fondo-capacitaciones{
+     background-image: url('../desafio-05/img/e-learning.webp');
+     background-size: cover;
+     background-position: center;
+     }
+ 
+ .table-capacitaciones{
+ 
+     font-size: 15px;
+     color: #000003;
+     font-family: cursive;
+     display: grid;
+     text-align: center;
+     grid-template-rows: 1fr 2fr;
+     grid-column-gap: 10px;
+     grid-row-gap: 10px;
+  
+ }
+/*Acá se usa Media Queries INDEX*/
+@media screen and (min-width:768px){
+
+ .header-index { 
+
+    flex-direction: row;
+    justify-content: space-around;
+  
+}
+
+    }
+
+
+@media screen and (min-width:768px){
+
+.mainwrapper-index {
+  
+        grid-template-areas:
+    
+        "header header"
+        "nav main"
+        "footer footer"
+        ;
+    
+        max-width: 1440px;
+        margin: auto;
+    
+    }
+
+.mision img {
+    display: block;
+    
+}
+
+.vision img {
+    display: block;
+}
+
+.main-index {
+
+ 
+    grid-template-areas: 
+    
+    "nosotros vision"
+    "mision vision"
+    ;
+
+    text-align: left;
+
+}
+.footer-index{
+
+    color: #faebd7;
+    font-family: cursive;
+    text-align: center;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+
+    
+}
+}
+
+/*Acá se usa Media Queries LINEAS DE ACCION*/
+
+@media screen and (min-width:768px){
+
+    .header-lineas-de-accion { 
+   
+       flex-direction: row;
+       justify-content: space-around;
+     
+   }
+   
+
+   .investigacion img{
+    display:block;
+}
+
+.desarrollo-e-innovacion img{
+    display: block;
+   
+}
+
+.induccion-y-capacitacion img{
+    display: block;
+}
+   
+   
+@media screen and (min-width:768px){
+   
+    .mainwrapper-lineas-de-accion {
+  
+        grid-template-areas:
+    
+        "header"
+        "nav main"
+        "footer"
+        ;
+    
+        max-width: 1440px;
+        margin: auto;
+
+        
+    }
+
+    @media screen and (min-width:768px){
+
+    .mainwrapper-capacitaciones{
+    
+    background-image: url('../desafio-05/img/e-learning.webp');
+    display: grid;
+    grid-template-areas:
+
+    "nav"
+    "header"
+    "main"
+    "footer"
+    ;
+
+    max-width: 1440px;
+    margin: auto;
+         }
+
+@media screen and (min-width:768px){
+
+    .mainwrapper-clientes{
+
+        font-family: cursive;
+        text-align: center;
+        margin-top: 15px;
+        max-width: 1440px;
+        margin: auto;
+      
+    
+        
+    }
+
+    @media screen and (min-width:768px){
+.footer-contacto{
+
+    color: #faebd7;
+    font-family: cursive;
+    text-align: center;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+
+    
+}
+    }
+
+   @keyframes movimiento-uno {
+
+    0% {
+        width: 100px;}
+       
+   }
+
+   25% {
+       width:50px;
+   }
+
+   75% { 
+       width:150px;
+   }
+
+   100% {
+       width:300px
+   }
+
+    
+    
+    }
+    @keyframes movimiento-dos {
+
+        0% {
+            width: 100px;
+        
+        }
+           
+    
+       25% {
+           width:50px;
+           transform:translateX(50px)
+       }
+    
+       75% { 
+           width:150px;
+           transform:translateY(80px)
+       }
+    
+       100% {
+           width:300px
+           transform: rotate(360deg)
+       }
+    
+        
+        
+        }
